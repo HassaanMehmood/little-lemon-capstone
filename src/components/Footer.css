@@ -1,0 +1,63 @@
+.footer-container {
+  background-color: #495e57;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 columns for the footer */
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 3; /* Takes 3 columns */
+}
+
+.footer-logo-img {
+  max-width: 150px; /* Makes sure the logo fits within the column */
+  height: 150px;
+  border: 1px dashed #ccc; /* Optional: adds a dashed border around the logo */
+}
+
+.footer-nav,
+.footer-contact,
+.footer-social {
+  margin-left: 80px;
+  grid-column: span 3; /* Each section takes 3 columns */
+}
+
+.footer-nav ul,
+.footer-social ul {
+  list-style: none;
+  padding: 1px;
+}
+
+.footer-nav a,
+.footer-social a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 0.2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Stack all items in one column for smaller screens */
+  }
+
+  .footer-logo,
+  .footer-nav,
+  .footer-contact,
+  .footer-social {
+    grid-column: span 1; /* Stack each section in full width */
+  }
+}

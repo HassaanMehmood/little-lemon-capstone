@@ -1,0 +1,93 @@
+.highlights {
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+/* Centering wrapper */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Max width container for 8-column center layout */
+.content-container {
+  width: 100%;
+}
+
+/* Header row: Title left, button right */
+.highlights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.highlights-header h2 {
+  font-size: 2rem;
+  color: #495e57;
+}
+
+.main-order-btn {
+  background-color: #f4ce14;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Card layout */
+.specials-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.special-card {
+  background-color: #edefee;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 280px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.special-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  height: 250px;
+}
+
+/* Align name and price in one line */
+.special-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.special-details h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background-color: #f4ce14;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
