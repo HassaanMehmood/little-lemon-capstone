@@ -2,42 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- Favicon for browser tab icon -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- Responsive design meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Sets the browser's theme color on mobile -->
     <meta name="theme-color" content="#000000" />
+
+    <!-- 👇 SEO Meta Description: summary shown in search engine results -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Reserve a table at Little Lemon - Chicago's finest Mediterranean dining experience. Fresh ingredients, cozy ambiance. Book online now!"
     />
+    <!-- Open Graph Meta Tags: for social media previews -->
+    <!-- Title shown when someone shares the site -->
+    <meta property="og:title" content="Reserve a Table at Little Lemon" />
+    <!-- Description shown under the title in social previews -->
+    <meta
+      property="og:description"
+      content="Book a table at Little Lemon. Mediterranean flavors and top-tier service await you!"
+    />
+    <!-- Image shown when the link is shared (should be publicly accessible) -->
+    <meta
+      property="og:image"
+      content="http://localhost:3000/images/og-reserve.jpg"
+    />
+    <!-- The exact URL of the page being shared -->
+    <meta property="og:url" content="http://localhost:3000/reserve" />
+    <!-- Type of content (website, article, video, etc.) -->
+    <meta property="og:type" content="website" />
+
+    <!-- Apple devices icon -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <!-- Manifest file for Progressive Web App (PWA) support -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    <!--
+      %PUBLIC_URL% will be replaced by the actual public path during the build.
+      Files like favicon, manifest, or images referenced here must live in /public.
     -->
-    <title>React App</title>
+
+    <!-- Page title shown in the browser tab -->
+    <title>Little Lemon | Reserve a Table</title>
   </head>
+
   <body>
+    <!-- Shown if JS is disabled in the browser -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Root element for mounting the React app -->
     <div id="root"></div>
+
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      ℹThis is the HTML template for your React app.
+      React takes over and renders everything inside #root.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      To run the app in development: `npm start`
+      To build it for production: `npm run build`
     -->
   </body>
 </html>
