@@ -14,7 +14,7 @@ function Hero() {
             the best Mediterranean flavors in a cozy, local setting. Enjoy the
             best Mediterranean flavors in a cozy, local setting.
           </p>
-          <a href="/reserve" className="reserve-button">
+          <a href="/booking" className="reserve-button">
             Book a Table
           </a>
         </div>

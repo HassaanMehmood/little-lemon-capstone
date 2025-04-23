@@ -1,36 +1,29 @@
 import React from "react";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import Highlights from "./components/Highlights";
-import Testimonials from "./components/Testimonials";
-import About from "./components/About";
 import Footer from "./components/Footer";
-
+import HomePage from "./pages/HomePage";
+import BookingPage from "./pages/BookingPage";
 import "./App.css";
 
 function App() {
   return (
-    <>
+    <Router>
       <nav className="nav">
         <Nav />
       </nav>
 
       <main className="main">
-        {/* Hero Section */}
-        <Hero />
-        {/* Highlights Section */}
-        <Highlights />
-        {/* Testimonials Section */}
-        <Testimonials />
-        {/* About Section */}
-        <About />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/booking" element={<BookingPage />} />
+        </Routes>
       </main>
 
       <footer className="footer">
         <Footer />
       </footer>
-    </>
+    </Router>
   );
 }
 
