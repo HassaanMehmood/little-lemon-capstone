@@ -10,7 +10,7 @@ import kateImg from "../assets/Hero.png";
 function Testimonials() {
   return (
     <section className="testimonials">
-      <h2>Customer Testimonials</h2>
+      <h2>Testimonials</h2>
       <div className="testimonial-cards-container">
         <div className="testimonial-card">
           <div className="testimonial-header">

@@ -1,18 +1,21 @@
 .testimonials {
-  margin-left: 150px;
-  margin-right: 150px;
+  background-color: #495e57;
   padding: 1rem 2rem;
   text-align: center;
-  border-radius: 16px;
 }
 
+.testimonials h2 {
+  font-size: 2rem;
+  color: white;
+}
 /* Create a container for the 4 testimonial cards */
 .testimonial-cards-container {
+  margin-left: 150px;
+  margin-right: 150px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 cards in the same row */
   gap: 1rem;
   justify-items: center;
-  margin: 0 auto;
   padding: 5px;
 }
 
