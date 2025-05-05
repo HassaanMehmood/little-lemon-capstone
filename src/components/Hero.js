@@ -5,7 +5,7 @@ import heroImage from "../assets/Hero.png"; // adjust path if needed
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-container">
+      <div className="container hero-container ">
         <div className="hero-left">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>

@@ -1,12 +1,4 @@
-/* Base Layout */
-.layout {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr auto;
-  min-height: 100vh;
-}
+/* .container {
+  margin-left: 150px;
+  margin-right: 150px;
+} */
